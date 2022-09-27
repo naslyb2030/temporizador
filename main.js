@@ -89,7 +89,11 @@
 // console.log(potenciar(3,4))
 function activador(){
         let num=document.getElementById('segundos').value
-        temporizador(num)
+        if (num==='') {
+            alert ('El campo está vacío')
+        }else{
+            temporizador(num)
+        }
     function temporizador(num) {
         if (num<=0) {
             return document.getElementById('contador').textContent='finish'

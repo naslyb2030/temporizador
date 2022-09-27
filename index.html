@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-image: url(./tiempo.jpg); background-size:cover;">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+    </style>
+<body style="background-image: url(./tiempo.jpg); background-size:cover; font-family: 'Abyssinica SIL', serif;">
     <div class="container" style="  width: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="content" style="border: solid 1px; background-color: rgb(238, 232, 232);width: 500px; height: 500px; text-align: center;">
+        <div class="content" style="border-radius: 10px;background-color: rgb(238, 232, 232);width: 500px; height: 500px; text-align: center; font-family: 'Abyssinica SIL', serif; ">
             <h1>TIEMPO INICIAL EN SEGUNDOS</h1>
-            <input type="number" name="" id="segundos">
-            <div class="contador" id="contador" style="height: 70px; width: 70px; border: solid 1px; margin: 50px; display: flex; justify-content: center; align-items: center"></div>
-            <button id="inicio" style="border-radius: 50%; width: 100px; height: 100px;">Iniciar</button>
+            <label for="" >Digite los segundos: <input type="number" name="" id="segundos" style="height: 70px; width: 70px; text-align: center; font-size: larger;"></label>
+            <div class="contador" id="contador" style="height: 70px; width: 70px; border: solid 1px; margin: 50px 200px; display: flex; justify-content: center; align-items: center; background-color: white; font-size: larger;"></div>
+            <button id="inicio" style="border-radius: 50%; width: 100px; height: 100px; font-family: 'Abyssinica SIL', serif; font-size: larger; background-color: rgb(127, 255, 133);">INICIAR</button>
         </div>
     </div>
     <script src="./main.js"></script>
